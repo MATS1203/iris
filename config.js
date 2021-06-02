@@ -4035,7 +4035,7 @@ module.exports = kconfig = async (kill, message) => {
 			
         }
     } catch (err) {
-		//await kill.sendText(ownerNumber[0], mess.wpprpt(command, err))
+		await kill.sendText(ownerNumber[0], mess.wpprpt(command, err))
 		await kill.reply(from, mess.fail(), id)
         console.log(color('[FALHA GERAL]', 'red'), err)
     }
